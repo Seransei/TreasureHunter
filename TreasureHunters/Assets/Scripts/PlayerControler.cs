@@ -21,7 +21,7 @@ public class PlayerControler : MonoBehaviour
         direction.x = Input.GetAxis("Horizontal") * speed;
         //direction.y = Input.GetAxis("Vertical");
 
-        if (Input.GetButton("A_Button"))
+        if (Input.GetButton("Jump"))
             direction += Vector3.up * heightJump;
 
         gameObject.transform.position = gameObject.transform.position + direction * Time.deltaTime;
