@@ -8,6 +8,8 @@ public class PlayerControler : MonoBehaviour
     [Range(0, 100)] public float speed = 10f;
     [Range(0, 200)] public float heightJump = 15f;
 
+    public int numPlayer;
+
     [Header("Transition bool")]
     public bool running = false;
     public bool flip = false;
@@ -27,7 +29,7 @@ public class PlayerControler : MonoBehaviour
     {
         Vector3 direction = Vector3.zero;
 
-        direction.x = Input.GetAxis("Horizontal") * speed;
+        direction.x = Input.GetAxis("Horizontal_J" + numPlayer) * speed;
         //direction.y = Input.GetAxis("Vertical");
 
         if(direction.x > 0)
@@ -53,10 +55,15 @@ public class PlayerControler : MonoBehaviour
             running = false;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump_J" + numPlayer))
         {
             GetComponent<Rigidbody2D>().AddForce(Vector2.up * heightJump, ForceMode2D.Impulse);
             airborne = true;
+        }
+
+        if(Input.GetButtonDown("Attack_J" + numPlayer))
+        {
+            animator.SetTrigger("Attack");
         }
 
         if (flip)
