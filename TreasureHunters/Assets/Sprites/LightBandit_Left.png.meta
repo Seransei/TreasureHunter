@@ -1,124 +1,124 @@
 fileFormatVersion: 2
-guid: 9582869baca0158488df3d70e4b38a4f
+guid: c6f2fd6629a5f6b4a8aea0bcf3bced34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1326518841250083646
-    second: HeavyBandit_Spritesheet_0
+      213: -3282197894321580119
+    second: LightBandit_Spritesheet_0
   - first:
-      213: 5586607056676056353
-    second: HeavyBandit_Spritesheet_1
+      213: -1564967237655837047
+    second: LightBandit_Spritesheet_1
   - first:
-      213: -5861773481080339334
-    second: HeavyBandit_Spritesheet_2
+      213: -8134177513646057416
+    second: LightBandit_Spritesheet_2
   - first:
-      213: 7484802502696100364
-    second: HeavyBandit_Spritesheet_3
+      213: -5743190006614381450
+    second: LightBandit_Spritesheet_3
   - first:
-      213: 3561632441817028954
-    second: HeavyBandit_Spritesheet_4
+      213: 8387727907788071781
+    second: LightBandit_Spritesheet_4
   - first:
-      213: 3400567603681763285
-    second: HeavyBandit_Spritesheet_5
+      213: -930612475021976227
+    second: LightBandit_Spritesheet_5
   - first:
-      213: -8865594070441498055
-    second: HeavyBandit_Spritesheet_6
+      213: 7106211878397669518
+    second: LightBandit_Spritesheet_6
   - first:
-      213: -327398415195971921
-    second: HeavyBandit_Spritesheet_7
+      213: 4406612656549873857
+    second: LightBandit_Spritesheet_7
   - first:
-      213: -3120519168258557576
-    second: HeavyBandit_Spritesheet_8
+      213: 4697167181876084208
+    second: LightBandit_Spritesheet_8
   - first:
-      213: -2444683717500572634
-    second: HeavyBandit_Spritesheet_9
+      213: 975594238340556729
+    second: LightBandit_Spritesheet_9
   - first:
-      213: 1084401113873760226
-    second: HeavyBandit_Spritesheet_10
+      213: 5810813233557566719
+    second: LightBandit_Spritesheet_10
   - first:
-      213: 8026558028972952527
-    second: HeavyBandit_Spritesheet_11
+      213: 437731384108799278
+    second: LightBandit_Spritesheet_11
   - first:
-      213: -3501545547541227702
-    second: HeavyBandit_Spritesheet_12
+      213: 297945651868495452
+    second: LightBandit_Spritesheet_12
   - first:
-      213: -6700418677811728942
-    second: HeavyBandit_Spritesheet_13
+      213: 2999988412345717646
+    second: LightBandit_Spritesheet_13
   - first:
-      213: 1742365488391982086
-    second: HeavyBandit_Spritesheet_14
+      213: 5324669158060895334
+    second: LightBandit_Spritesheet_14
   - first:
-      213: 8832612408462130983
-    second: HeavyBandit_Spritesheet_15
+      213: -1514098059790102097
+    second: LightBandit_Spritesheet_15
   - first:
-      213: -5613116554060370230
-    second: HeavyBandit_Spritesheet_16
+      213: 4857924587637997832
+    second: LightBandit_Spritesheet_16
   - first:
-      213: 4945882204344124575
-    second: HeavyBandit_Spritesheet_17
+      213: 2952055447138272760
+    second: LightBandit_Spritesheet_17
   - first:
-      213: 59522365229670766
-    second: HeavyBandit_Spritesheet_18
+      213: -6250892376657897870
+    second: LightBandit_Spritesheet_18
   - first:
-      213: -8046825002282382515
-    second: HeavyBandit_Spritesheet_19
+      213: 290606397865625769
+    second: LightBandit_Spritesheet_19
   - first:
-      213: -8404507684033469050
-    second: HeavyBandit_Spritesheet_20
+      213: -2494624750399617676
+    second: LightBandit_Spritesheet_20
   - first:
-      213: 5403819102627464204
-    second: HeavyBandit_Spritesheet_21
+      213: -9115250171684967442
+    second: LightBandit_Spritesheet_21
   - first:
-      213: -1528141839970302900
-    second: HeavyBandit_Spritesheet_22
+      213: 2967821953389213594
+    second: LightBandit_Spritesheet_22
   - first:
-      213: 3870857267075310454
-    second: HeavyBandit_Spritesheet_23
+      213: 1760037824321947344
+    second: LightBandit_Spritesheet_23
   - first:
-      213: 8801308590782080382
-    second: HeavyBandit_Spritesheet_24
+      213: -2352177786912749531
+    second: LightBandit_Spritesheet_24
   - first:
-      213: 541992440849749494
-    second: HeavyBandit_Spritesheet_25
+      213: -1630164726331490021
+    second: LightBandit_Spritesheet_25
   - first:
-      213: 1059435490389363675
-    second: HeavyBandit_Spritesheet_26
+      213: -1043964063110792323
+    second: LightBandit_Spritesheet_26
   - first:
-      213: -4491373945656402694
-    second: HeavyBandit_Spritesheet_27
+      213: -6471978273961675459
+    second: LightBandit_Spritesheet_27
   - first:
-      213: 4056994118181047225
-    second: HeavyBandit_Spritesheet_28
+      213: -2816247213303443842
+    second: LightBandit_Spritesheet_28
   - first:
-      213: -6140481825742507668
-    second: HeavyBandit_Spritesheet_29
+      213: -5684466150020860113
+    second: LightBandit_Spritesheet_29
   - first:
-      213: -6407690175073239879
-    second: HeavyBandit_Spritesheet_30
+      213: 6207390469477450917
+    second: LightBandit_Spritesheet_30
   - first:
-      213: -7177667104149632699
-    second: HeavyBandit_Spritesheet_31
+      213: -3782599932638210699
+    second: LightBandit_Spritesheet_31
   - first:
-      213: -3521572523844149827
-    second: HeavyBandit_Spritesheet_32
+      213: 1254409765779767661
+    second: LightBandit_Spritesheet_32
   - first:
-      213: 3785680408003799849
-    second: HeavyBandit_Spritesheet_33
+      213: -5191620932058775164
+    second: LightBandit_Spritesheet_33
   - first:
-      213: -2056260606151370125
-    second: HeavyBandit_Spritesheet_34
+      213: -5250445056990526306
+    second: LightBandit_Spritesheet_34
   - first:
-      213: -8287228688043619113
-    second: HeavyBandit_Spritesheet_35
+      213: 1481595764554171466
+    second: LightBandit_Spritesheet_35
   - first:
-      213: 6117276729225017302
-    second: HeavyBandit_Spritesheet_36
+      213: -8761846595876868902
+    second: LightBandit_Spritesheet_36
   - first:
-      213: -3655505173047834312
-    second: HeavyBandit_Spritesheet_37
+      213: 8038561968037600321
+    second: LightBandit_Spritesheet_37
   - first:
-      213: 5982070676672548652
-    second: HeavyBandit_Spritesheet_38
+      213: -3303857934592167335
+    second: LightBandit_Spritesheet_38
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -203,820 +203,820 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_0
+      name: LightBandit_Spritesheet_0
       rect:
         serializedVersion: 2
         x: 16
         y: 290
         width: 26
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a208e3dae415cf6439defd142831062b
-      internalID: -1326518841250083646
+      spriteID: ffdcbd96fb7c8b44c987458f725b0068
+      internalID: -3282197894321580119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_1
+      name: LightBandit_Spritesheet_1
       rect:
         serializedVersion: 2
         x: 64
         y: 290
         width: 26
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba654fbe349e2444ba0c8d43e7af4181
-      internalID: 5586607056676056353
+      spriteID: 6e10fc557edb42f47aac1f98f9028806
+      internalID: -1564967237655837047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_2
+      name: LightBandit_Spritesheet_2
       rect:
         serializedVersion: 2
         x: 112
         y: 290
         width: 26
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7374de92b4479a042b2a18e1be17e94d
-      internalID: -5861773481080339334
+      spriteID: 6e130d61f35b5a84cb031e13cd681b4a
+      internalID: -8134177513646057416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_3
+      name: LightBandit_Spritesheet_3
       rect:
         serializedVersion: 2
         x: 160
         y: 290
         width: 26
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9e1ff0ddd2ce114287a093d4c7cd706
-      internalID: 7484802502696100364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 290
-        width: 33
         height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb1695395a2c19f4eadf88dc3cf2876c
-      internalID: 3561632441817028954
+      spriteID: 7197f48f920e6d0429d64292bb83b726
+      internalID: -5743190006614381450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_5
+      name: LightBandit_Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 248
-        y: 290
-        width: 33
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42b2769ade01fd843a2221d41683c711
-      internalID: 3400567603681763285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 296
+        x: 199
         y: 290
         width: 33
         height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb00aecd769085944984515d5d2e9282
-      internalID: -8865594070441498055
+      spriteID: 9c06314cfeb66bf4a828030a6779e9e5
+      internalID: 8387727907788071781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_7
+      name: LightBandit_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 344
+        x: 247
         y: 290
         width: 33
         height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bd902f2de0773543b2bdecf5547c3b3
-      internalID: -327398415195971921
+      spriteID: 6b9d0ac43cb4d6949b32b7f4f82c363e
+      internalID: -930612475021976227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_8
+      name: LightBandit_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 290
+        width: 33
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65979544752c7fc4abc211f39ccc2e2f
+      internalID: 7106211878397669518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightBandit_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 290
+        width: 33
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403bd678aefd1a141a089f63f7884362
+      internalID: 4406612656549873857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightBandit_Spritesheet_8
       rect:
         serializedVersion: 2
         x: 16
         y: 242
         width: 25
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 897a6cced4bb78e41b06fe44167d90c4
-      internalID: -3120519168258557576
+      spriteID: dbed66a97dea8a04caa47aed1c2daf17
+      internalID: 4697167181876084208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_9
+      name: LightBandit_Spritesheet_9
       rect:
         serializedVersion: 2
         x: 60
         y: 243
         width: 29
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 794535664b765c7499362038e58deb8e
-      internalID: -2444683717500572634
+      spriteID: a3d7c96560d512645a979fe94f4cbf3b
+      internalID: 975594238340556729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_10
+      name: LightBandit_Spritesheet_10
       rect:
         serializedVersion: 2
         x: 107
         y: 242
-        width: 31
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b87646bdbe3be1e4f95ed46b8070b7cc
-      internalID: 1084401113873760226
+      spriteID: b92396177ef3e184197abe9d50ddc1e1
+      internalID: 5810813233557566719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_11
+      name: LightBandit_Spritesheet_11
       rect:
         serializedVersion: 2
         x: 160
         y: 241
         width: 25
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 106151354c3c7c84dbd378f8f4646d9d
-      internalID: 8026558028972952527
+      spriteID: 16a2264c2a65a5f46bb6cfac4758501a
+      internalID: 437731384108799278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_12
+      name: LightBandit_Spritesheet_12
       rect:
         serializedVersion: 2
-        x: 210
+        x: 211
         y: 242
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 20
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ce8d82cc875c834982f05fe5f745b9b
-      internalID: -3501545547541227702
+      spriteID: 0f7a49810bacd4443979995e402d8d36
+      internalID: 297945651868495452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_13
+      name: LightBandit_Spritesheet_13
       rect:
         serializedVersion: 2
         x: 249
         y: 244
         width: 31
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5684ca241e3cafd4695d50dfddc8f73e
-      internalID: -6700418677811728942
+      spriteID: 340ef2e7d0f08f848ae1a4e19764c1e4
+      internalID: 2999988412345717646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_14
+      name: LightBandit_Spritesheet_14
       rect:
         serializedVersion: 2
         x: 296
         y: 242
         width: 31
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12b8c391ed8afa44e9660c91cbe99f52
-      internalID: 1742365488391982086
+      spriteID: 517941d559c06204bbe3aef05e6cc89b
+      internalID: 5324669158060895334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_15
+      name: LightBandit_Spritesheet_15
       rect:
         serializedVersion: 2
         x: 345
         y: 242
         width: 31
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca3b0ae250fc687458a3d9cedd03de02
-      internalID: 8832612408462130983
+      spriteID: 37945c7a3411e1f4cafd9fe60f14caec
+      internalID: -1514098059790102097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_16
+      name: LightBandit_Spritesheet_16
       rect:
         serializedVersion: 2
         x: 14
         y: 194
         width: 24
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a42ca90660b2713429a0bb7ef4a099d8
-      internalID: -5613116554060370230
+      spriteID: f2212940f943bdc488dd48d060528d7f
+      internalID: 4857924587637997832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_17
+      name: LightBandit_Spritesheet_17
       rect:
         serializedVersion: 2
         x: 61
         y: 194
         width: 25
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc36396b4845e9e42ba48f232dda6502
-      internalID: 4945882204344124575
+      spriteID: ad7869a1d78a17d43a6672c5a93ca077
+      internalID: 2952055447138272760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_18
+      name: LightBandit_Spritesheet_18
       rect:
         serializedVersion: 2
         x: 109
         y: 194
         width: 25
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3a842a786e9840429a4f7897840e233
-      internalID: 59522365229670766
+      spriteID: 6e452b663de7cf64283b296e3a921159
+      internalID: -6250892376657897870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_19
+      name: LightBandit_Spritesheet_19
       rect:
         serializedVersion: 2
         x: 157
         y: 194
         width: 24
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcf7787a7a258b5459cc309d92648e48
-      internalID: -8046825002282382515
+      spriteID: eb27491c8b0fc7a4b8ca4d4a7e0d8451
+      internalID: 290606397865625769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_20
+      name: LightBandit_Spritesheet_20
       rect:
         serializedVersion: 2
         x: 194
         y: 194
         width: 38
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f22337469cb9c104ea4b972481f5f3f5
-      internalID: -8404507684033469050
+      spriteID: acaf7eb12f4a9a245a4709afb02df113
+      internalID: -2494624750399617676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_21
+      name: LightBandit_Spritesheet_21
       rect:
         serializedVersion: 2
         x: 244
         y: 194
         width: 36
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f65dff5c4bb3aea4cae699ff77cc638b
-      internalID: 5403819102627464204
+      spriteID: 25106921b7309e642a6bf03ac87e8eb0
+      internalID: -9115250171684967442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_22
+      name: LightBandit_Spritesheet_22
       rect:
         serializedVersion: 2
         x: 295
         y: 194
         width: 33
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4426ac9360d88c4fba9768552d5cf97
-      internalID: -1528141839970302900
+      spriteID: e3ec7fbeebaa0dc4da263e07dac4ffd5
+      internalID: 2967821953389213594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_23
+      name: LightBandit_Spritesheet_23
       rect:
         serializedVersion: 2
         x: 352
         y: 194
         width: 24
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16db583a1233b544fb6f67c5ade9a3be
-      internalID: 3870857267075310454
+      spriteID: 6d418e5731e341b41909572301afae5b
+      internalID: 1760037824321947344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_24
+      name: LightBandit_Spritesheet_24
       rect:
         serializedVersion: 2
-        x: 7
+        x: 6
         y: 146
-        width: 40
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 39
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a18e665db2cbd8240a2f5a6caf30a1a0
-      internalID: 8801308590782080382
+      spriteID: 9d0b1b613752ea541bad007c9ad82c1f
+      internalID: -2352177786912749531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_25
+      name: LightBandit_Spritesheet_25
       rect:
         serializedVersion: 2
         x: 57
         y: 146
-        width: 37
+        width: 35
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 698fac2f5468eec4a8fef504932cc6c3
-      internalID: 541992440849749494
+      spriteID: f0b36d44b0ca2704e826c8bd8d069d7f
+      internalID: -1630164726331490021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_26
+      name: LightBandit_Spritesheet_26
       rect:
         serializedVersion: 2
-        x: 109
+        x: 108
         y: 146
         width: 27
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 376c01ef1113a1b42b8d078309e15c20
-      internalID: 1059435490389363675
+      spriteID: 383382180e6092849956ad19ddf20e91
+      internalID: -1043964063110792323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_27
+      name: LightBandit_Spritesheet_27
       rect:
         serializedVersion: 2
-        x: 158
+        x: 157
         y: 146
         width: 26
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 366e29ffdeed4a84386bff00896b7a4e
-      internalID: -4491373945656402694
+      spriteID: 18e7fa0463b51354389d5c9f1bf3e859
+      internalID: -6471978273961675459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_28
+      name: LightBandit_Spritesheet_28
       rect:
         serializedVersion: 2
-        x: 206
+        x: 205
         y: 146
         width: 26
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72ea14805e284504286c2e37bb5f570e
-      internalID: 4056994118181047225
+      spriteID: 25975240e8bd1244f8591b0b02eaee79
+      internalID: -2816247213303443842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_29
+      name: LightBandit_Spritesheet_29
       rect:
         serializedVersion: 2
-        x: 254
+        x: 253
         y: 146
         width: 26
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d394daa9e98a38247ba74f4f8c4c60c9
-      internalID: -6140481825742507668
+      spriteID: 2c506d2de79077d43807500bd01c9257
+      internalID: -5684466150020860113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_30
+      name: LightBandit_Spritesheet_30
       rect:
         serializedVersion: 2
-        x: 302
+        x: 301
         y: 146
         width: 26
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4d6326db169a5348a52101f78e3aa34
-      internalID: -6407690175073239879
+      spriteID: ffa8fe2c6d0cc324db663ab65936758d
+      internalID: 6207390469477450917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_31
+      name: LightBandit_Spritesheet_31
       rect:
         serializedVersion: 2
-        x: 352
+        x: 351
         y: 146
         width: 23
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d07cff2ce8c02e4dbda566f508b94e9
-      internalID: -7177667104149632699
+      spriteID: 0f511ff38584d7c488f2caa98e9804ab
+      internalID: -3782599932638210699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_32
+      name: LightBandit_Spritesheet_32
       rect:
         serializedVersion: 2
         x: 14
         y: 98
         width: 26
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61d6f30411ed6a44aa24433afe7c0d80
-      internalID: -3521572523844149827
+      spriteID: 00954cea10e2f7e4596432ebeafc74fa
+      internalID: 1254409765779767661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_33
+      name: LightBandit_Spritesheet_33
       rect:
         serializedVersion: 2
         x: 67
         y: 98
         width: 20
         height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0396d686caa16147a5e77c03c740ae7
-      internalID: 3785680408003799849
+      spriteID: 8d6f9cabf7fc76f45914399292bcd1bb
+      internalID: -5191620932058775164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_34
+      name: LightBandit_Spritesheet_34
       rect:
         serializedVersion: 2
         x: 115
         y: 98
         width: 20
         height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d63710c4c29b278458c4355b83d0ceb8
-      internalID: -2056260606151370125
+      spriteID: 41af77f8e613dd24882fd68bd405e4a1
+      internalID: -5250445056990526306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_35
+      name: LightBandit_Spritesheet_35
       rect:
         serializedVersion: 2
         x: 150
         y: 96
         width: 37
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff79bdba644373940bdf3a1ee96a1122
-      internalID: -8287228688043619113
+      spriteID: 1b6d3c76fedb61b4499707854c0813ef
+      internalID: 1481595764554171466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_36
+      name: LightBandit_Spritesheet_36
       rect:
         serializedVersion: 2
         x: 198
         y: 96
         width: 37
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efa6df19c95c86340bd311ba6e7e2d7f
-      internalID: 6117276729225017302
+      spriteID: 32d3475b084b44644adba34f475082c7
+      internalID: -8761846595876868902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_37
+      name: LightBandit_Spritesheet_37
       rect:
         serializedVersion: 2
         x: 256
         y: 98
         width: 24
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e5a77399eb2e8c449e631847b8c55b7
-      internalID: -3655505173047834312
+      spriteID: bb35cf33f711fb6429ccf3994661505b
+      internalID: 8038561968037600321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeavyBandit_Spritesheet_38
+      name: LightBandit_Spritesheet_38
       rect:
         serializedVersion: 2
         x: 291
         y: 98
-        width: 44
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 43
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e887ea414b40b2e4a9d7877d8d79d687
-      internalID: 5982070676672548652
+      spriteID: b0a8aabf68c9c1b4e965fcd394987e9e
+      internalID: -3303857934592167335
       vertices: []
       indices: 
       edges: []

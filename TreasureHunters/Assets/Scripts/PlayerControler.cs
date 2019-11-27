@@ -6,7 +6,14 @@ public class PlayerControler : MonoBehaviour
 {
 
     [Range(0, 100)] public float speed = 10f;
-    [Range(0, 200)]public float heightJump = 15f;
+    [Range(0, 200)] public float heightJump = 15f;
+
+    [Header("Transition bool")]
+    public bool running = false;
+    public bool flip = false;
+    public bool lookLeft = true;
+    public bool inCombat = false;
+    public bool airborne = false;
 
     Animator animator;
     // Start is called before the first frame update
@@ -25,25 +32,49 @@ public class PlayerControler : MonoBehaviour
 
         if(direction.x > 0)
         {
-            animator.SetBool("WalkRight", true);
-            animator.SetBool("WalkLeft", false);
+            running = true;
+            if (lookLeft)
+            {
+                flip = true;
+                lookLeft = false;
+            }
         }
         else if(direction.x < 0)
         {
-            animator.SetBool("WalkRight", false);
-            animator.SetBool("WalkLeft", true);
+            running = true;
+            if (!lookLeft)
+            {
+                flip = true;
+                lookLeft = true;
+            }
         }
         else
         {
-            animator.SetBool("WalkRight", false);
-            animator.SetBool("WalkLeft", false);
+            running = false;
         }
 
         if (Input.GetButtonDown("Jump"))
         {
             GetComponent<Rigidbody2D>().AddForce(Vector2.up * heightJump, ForceMode2D.Impulse);
+            airborne = true;
         }
-        gameObject.transform.position = gameObject.transform.position + direction * Time.deltaTime;
-       
+
+        if (flip)
+        {
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            flip = false;
+        }
+
+        animator.SetBool("Running", running);
+        animator.SetBool("Airborne", airborne);
+        animator.SetBool("InCombat", inCombat);
+
+        gameObject.transform.position = gameObject.transform.position + direction * Time.deltaTime;        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+            airborne = false;
     }
 }
