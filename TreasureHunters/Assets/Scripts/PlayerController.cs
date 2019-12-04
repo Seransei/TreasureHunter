@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControler : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
+    Vector3 direction;
     [Range(0, 100)] public float speed = 10f;
     [Range(0, 200)] public float heightJump = 15f;
 
@@ -13,58 +14,19 @@ public class PlayerControler : MonoBehaviour
     [Header("Transition bool")]
     public bool running = false;
     public bool flip = false;
-    public bool lookLeft = true;
+    public bool lookingLeft = true;
     public bool inCombat = false;
     public bool airborne = false;
 
     Animator animator;
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Vector3 direction = Vector3.zero;
-
-        direction.x = Input.GetAxis("Horizontal_J" + numPlayer) * speed;
-        //direction.y = Input.GetAxis("Vertical");
-
-        if(direction.x > 0)
-        {
-            running = true;
-            if (lookLeft)
-            {
-                flip = true;
-                lookLeft = false;
-            }
-        }
-        else if(direction.x < 0)
-        {
-            running = true;
-            if (!lookLeft)
-            {
-                flip = true;
-                lookLeft = true;
-            }
-        }
-        else
-        {
-            running = false;
-        }
-
-        if (Input.GetButtonDown("Jump_J" + numPlayer))
-        {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * heightJump, ForceMode2D.Impulse);
-            airborne = true;
-        }
-
-        if(Input.GetButtonDown("Attack_J" + numPlayer))
-        {
-            animator.SetTrigger("Attack");
-        }
+        CheckInputs();
 
         if (flip)
         {
@@ -83,5 +45,45 @@ public class PlayerControler : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
             airborne = false;
+    }
+
+    void CheckInputs()
+    {
+        direction.x = Input.GetAxis("Horizontal_J" + numPlayer) * speed;
+        //direction.y = Input.GetAxis("Vertical");
+
+        if (direction.x > 0)
+        {
+            running = true;
+            if (lookingLeft)
+            {
+                flip = true;
+                lookingLeft = false;
+            }
+        }
+        else if (direction.x < 0)
+        {
+            running = true;
+            if (!lookingLeft)
+            {
+                flip = true;
+                lookingLeft = true;
+            }
+        }
+        else
+        {
+            running = false;
+        }
+
+        if (Input.GetButtonDown("Jump_J" + numPlayer))
+        {
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * heightJump, ForceMode2D.Impulse);
+            airborne = true;
+        }
+
+        if (Input.GetButtonDown("Attack_J" + numPlayer))
+        {
+            animator.SetTrigger("Attack");
+        }
     }
 }
