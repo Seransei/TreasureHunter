@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     private void Awake()
     {
         owner = transform.parent.gameObject;
+        GetComponent<BoxCollider2D>().enabled = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

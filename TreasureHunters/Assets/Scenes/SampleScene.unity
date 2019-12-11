@@ -670,6 +670,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8151957830365119035, guid: a0359871f55a5b04d9a177db554a7168,
+        type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 4978551145337686863, guid: a0359871f55a5b04d9a177db554a7168,
         type: 3}
       propertyPath: m_Sprite
@@ -701,10 +706,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.37
       objectReference: {fileID: 0}
-    - target: {fileID: 8151957830365119035, guid: a0359871f55a5b04d9a177db554a7168,
+    - target: {fileID: 6204006623942459013, guid: a0359871f55a5b04d9a177db554a7168,
         type: 3}
-      propertyPath: m_TagString
-      value: Weapon
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0359871f55a5b04d9a177db554a7168, type: 3}
@@ -988,6 +993,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8151957830365119035, guid: a0359871f55a5b04d9a177db554a7168,
+        type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 4978551145337686863, guid: a0359871f55a5b04d9a177db554a7168,
         type: 3}
       propertyPath: m_Sprite
@@ -1017,17 +1027,12 @@ PrefabInstance:
     - target: {fileID: 2875206169527899608, guid: a0359871f55a5b04d9a177db554a7168,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.26
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 2875206169527899608, guid: a0359871f55a5b04d9a177db554a7168,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 8151957830365119035, guid: a0359871f55a5b04d9a177db554a7168,
-        type: 3}
-      propertyPath: m_TagString
-      value: Weapon
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 5752394908809202187, guid: a0359871f55a5b04d9a177db554a7168,
         type: 3}
@@ -1053,6 +1058,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204006623942459013, guid: a0359871f55a5b04d9a177db554a7168,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204006623942459013, guid: a0359871f55a5b04d9a177db554a7168,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204006623942459013, guid: a0359871f55a5b04d9a177db554a7168,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204006623942459013, guid: a0359871f55a5b04d9a177db554a7168,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204006623942459013, guid: a0359871f55a5b04d9a177db554a7168,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0359871f55a5b04d9a177db554a7168, type: 3}
