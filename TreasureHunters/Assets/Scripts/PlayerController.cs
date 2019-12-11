@@ -19,6 +19,11 @@ public class PlayerController : MonoBehaviour
     public bool airborne = false;
 
     Animator animator;
+
+    public Animator Animator
+    {
+        get { return animator; }
+    }
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -50,7 +55,6 @@ public class PlayerController : MonoBehaviour
     void CheckInputs()
     {
         direction.x = Input.GetAxis("Horizontal_J" + numPlayer) * speed;
-        //direction.y = Input.GetAxis("Vertical");
 
         if (direction.x > 0)
         {
