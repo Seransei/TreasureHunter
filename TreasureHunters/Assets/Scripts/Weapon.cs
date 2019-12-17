@@ -16,8 +16,7 @@ public class Weapon : MonoBehaviour
     {
         if (!collision.gameObject.Equals(owner))
         {
-            Debug.Log("hit");
-            collision.gameObject.GetComponent<PlayerController>().Animator.SetTrigger("TakeHit");
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(20.0f);
         }
     }
 }
