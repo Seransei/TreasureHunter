@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Transition bool")]
     public bool lookingLeft = true;
-    public bool inCombat = false;
+    public bool inCombat = true;
     public bool airborne = false;
 
     float life = 100.0f;
@@ -23,17 +23,17 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
     GameObject lifeBar;
+    Transform attackPoint;
+    public LayerMask playerLayers;
+    public float attackRange;
 
-    public Animator Animator
-    {
-        get { return animator; }
-    }
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         lifeBar = GameObject.Find("Player" + numPlayer + "_Life");
         lifeBar.transform.GetChild(1).GetComponent<RawImage>().color = Color.Lerp(Color.red, Color.green, life / 100.0f);
+        attackPoint = transform.GetChild(0).transform;
     }
 
     void Update()
@@ -41,19 +41,7 @@ public class PlayerController : MonoBehaviour
         CheckInputs();
 
         animator.SetBool("Airborne", airborne);
-        animator.SetInteger("Speed", Mathf.FloorToInt(moveInput * speed));
-
-        /*if (flip)
-        {
-            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-            flip = false;
-        }*/
-
-        //animator.SetBool("Running", running);
-        //animator.SetBool("Airborne", airborne);
-        //animator.SetBool("InCombat", inCombat);
-
-        //gameObject.transform.position = gameObject.transform.position + direction * Time.deltaTime;        
+        animator.SetInteger("Speed", Mathf.FloorToInt(moveInput * speed));    
     }
 
     void FixedUpdate()
@@ -95,7 +83,20 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Attack_J" + numPlayer))
         {
-            animator.SetTrigger("Attack");
+            Attack();
+        }
+    }
+
+    void Attack()
+    {
+        animator.SetTrigger("Attack");
+
+        List<Collider2D> hits = new List<Collider2D>(Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers));
+        PlayerController[] hitEnemies = hits.Select(hit => hit.GetComponent<PlayerController>()).Where(enemy => enemy != this).ToArray();
+
+        foreach(PlayerController pc in hitEnemies)
+        {
+            pc.TakeDamage(20.0f);
         }
     }
 
@@ -103,7 +104,10 @@ public class PlayerController : MonoBehaviour
     {
         life -= dmg;
         lifeBar.transform.GetChild(1).GetComponent<RawImage>().color = Color.Lerp(Color.red, Color.green, life / 100.0f);
-        lifeBar.transform.GetChild(1).localScale = new Vector3(life / 100.0f, 1f, 1f);
+
+        Vector3 scaler = lifeBar.transform.GetChild(1).localScale;
+        scaler.x = life / 100.0f;
+        lifeBar.transform.GetChild(1).localScale = scaler;
 
         if(life <= 0)
         {
@@ -116,5 +120,13 @@ public class PlayerController : MonoBehaviour
     {
         GetComponent<BoxCollider2D>().enabled = false;
         this.enabled = false;
+    }
+
+    void OnDrawGizmosSelected() 
+    {
+        if(attackPoint == null)
+        return;
+
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }
