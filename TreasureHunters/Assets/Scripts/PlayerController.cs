@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
     public LayerMask playerLayers;
     public float attackRange;
 
+    float attackRate = 2.0f;
+    float nextAttackTime = 0f;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -83,7 +86,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Attack_J" + numPlayer))
         {
-            Attack();
+            if(Time.time >= nextAttackTime)
+            {
+                Attack();
+                nextAttackTime = Time.time + 1f / attackRate;
+            }
         }
     }
 
@@ -118,6 +125,7 @@ public class PlayerController : MonoBehaviour
 
     void Die()
     {
+        animator.SetBool("IsDead", true);
         GetComponent<BoxCollider2D>().enabled = false;
         this.enabled = false;
     }
