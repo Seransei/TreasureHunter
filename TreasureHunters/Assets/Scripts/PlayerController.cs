@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [Range(0, 200)] public float heightJump = 15f;
 
     public int numPlayer;
+    public GameObject projectilePrefab;
 
     [Header("Transition bool")]
     public bool lookingLeft = true;
@@ -22,20 +23,24 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
     Rigidbody2D rb;
-    GameObject lifeBar;
+    GameObject lifeBar, guardBar;
     Transform attackPoint;
     public LayerMask playerLayers;
     public float attackRange;
 
     float attackRate = 2.0f;
     float nextAttackTime = 0f;
+    float guardRate = 1f;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
         lifeBar = GameObject.Find("Player" + numPlayer + "_Life");
         lifeBar.transform.GetChild(1).GetComponent<RawImage>().color = Color.Lerp(Color.red, Color.green, life / 100.0f);
+        
+        guardBar = GameObject.Find("Player" + numPlayer + "_Guard");
         attackPoint = transform.GetChild(0).transform;
     }
 
@@ -44,7 +49,14 @@ public class PlayerController : MonoBehaviour
         CheckInputs();
 
         animator.SetBool("Airborne", airborne);
-        animator.SetInteger("Speed", Mathf.FloorToInt(moveInput * speed));    
+        animator.SetInteger("Speed", Mathf.FloorToInt(moveInput * speed)); 
+
+        if(guardRate < 1f)
+            guardRate += 0.01f * Time.deltaTime;  
+
+        Vector3 scaler = guardBar.transform.GetChild(1).localScale;
+        scaler.x = guardRate;
+        guardBar.transform.GetChild(1).localScale = scaler;
     }
 
     void FixedUpdate()
@@ -92,6 +104,28 @@ public class PlayerController : MonoBehaviour
                 nextAttackTime = Time.time + 1f / attackRate;
             }
         }
+
+        if (Input.GetButtonDown("HeavyAttack_J" + numPlayer))
+        {
+            if(Time.time >= nextAttackTime)
+            {
+                Attack();
+                GameObject go = Instantiate(projectilePrefab, transform.GetChild(0).position, Quaternion.Euler(0f, 0f, 90f));
+                if(!lookingLeft)
+                      go.transform.Rotate(Vector3.forward, 180f);
+                nextAttackTime = Time.time + 1f / attackRate;
+            }
+        }
+
+        if (Input.GetButtonDown("Guard_J" + numPlayer))
+        {
+            Guard();
+        }
+        if (Input.GetButtonUp("Guard_J" + numPlayer)) 
+        {
+            animator.SetBool("Guard", false);
+        }
+
     }
 
     void Attack()
@@ -107,9 +141,24 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void Guard()
+    {
+        if(!animator.GetBool("Guard"))
+            animator.SetBool("Guard", true);
+    }
+
     public void TakeDamage(float dmg)
     {
-        life -= dmg;
+        if(animator.GetBool("Guard"))
+        {
+            life -= (dmg - dmg * guardRate); 
+            guardRate -= 0.2f;
+            if(guardRate < 0)
+                guardRate = 0;
+        }
+        else
+            life -= dmg;
+
         lifeBar.transform.GetChild(1).GetComponent<RawImage>().color = Color.Lerp(Color.red, Color.green, life / 100.0f);
 
         Vector3 scaler = lifeBar.transform.GetChild(1).localScale;
@@ -126,8 +175,8 @@ public class PlayerController : MonoBehaviour
     void Die()
     {
         animator.SetBool("IsDead", true);
-        GetComponent<BoxCollider2D>().enabled = false;
-        this.enabled = false;
+        //GetComponent<BoxCollider2D>().enabled = false;
+        //this.enabled = false;
     }
 
     void OnDrawGizmosSelected() 
