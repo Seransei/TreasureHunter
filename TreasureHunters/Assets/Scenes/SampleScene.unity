@@ -521,7 +521,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 469, y: 445}
+  m_AnchoredPosition: {x: 469, y: 262}
   m_SizeDelta: {x: -1069.1, y: -605.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249291012
@@ -591,7 +591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1011.15, y: 445}
+  m_AnchoredPosition: {x: 1011.15, y: 262}
   m_SizeDelta: {x: -1084.3, y: -620.3}
   m_Pivot: {x: -0.000000011175871, y: 0.5}
 --- !u!114 &403583842
@@ -1040,6 +1040,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3282197894321580119, guid: c6f2fd6629a5f6b4a8aea0bcf3bced34,
         type: 3}
+    - target: {fileID: 4978551145337686863, guid: a0359871f55a5b04d9a177db554a7168,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4978551145337686851, guid: a0359871f55a5b04d9a177db554a7168,
         type: 3}
       propertyPath: numPlayer
@@ -1136,7 +1141,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 67.149994, y: 445.99997}
+  m_AnchoredPosition: {x: 67.150024, y: 263.69998}
   m_SizeDelta: {x: -1084.3, y: -620.3}
   m_Pivot: {x: -0.000000011175871, y: 0.5}
 --- !u!114 &1697356687
@@ -1206,7 +1211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -475, y: 446}
+  m_AnchoredPosition: {x: -475, y: 263.7}
   m_SizeDelta: {x: -1069.0999, y: -605.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1770324027
@@ -1511,6 +1516,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1326518841250083646, guid: 9582869baca0158488df3d70e4b38a4f,
         type: 3}
+    - target: {fileID: 4978551145337686863, guid: a0359871f55a5b04d9a177db554a7168,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4978551145337686851, guid: a0359871f55a5b04d9a177db554a7168,
         type: 3}
       propertyPath: numPlayer
