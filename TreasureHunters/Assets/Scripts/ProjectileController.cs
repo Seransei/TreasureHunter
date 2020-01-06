@@ -5,6 +5,7 @@ using UnityEngine;
 public class ProjectileController : MonoBehaviour
 {
     public float speed = 5.0f;
+    public PlayerController player;
 
     void Update()
     {
@@ -13,7 +14,7 @@ public class ProjectileController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) 
     {
-        other.gameObject.GetComponent<PlayerController>().TakeDamage(20.0f);
+        other.gameObject.GetComponent<PlayerController>().TakeDamage(player.attackDamage * player.attackMultiplier);
         Destroy(gameObject);
     }
 }

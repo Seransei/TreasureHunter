@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [Range(0, 200)] public float heightJump = 15f;
 
     public int numPlayer;
+
     public GameObject projectilePrefab;
 
     [Header("Transition bool")]
@@ -18,7 +20,10 @@ public class PlayerController : MonoBehaviour
     public bool inCombat = true;
     public bool airborne = false;
 
-    float life = 100.0f;
+    public float life = 100.0f;
+    public float attackDamage = 10f;
+    public float attackMultiplier = 1f;
+
     float moveInput;
 
     Animator animator;
@@ -57,6 +62,8 @@ public class PlayerController : MonoBehaviour
         Vector3 scaler = guardBar.transform.GetChild(1).localScale;
         scaler.x = guardRate;
         guardBar.transform.GetChild(1).localScale = scaler;
+
+        UpdateLifebar();
     }
 
     void FixedUpdate()
@@ -110,7 +117,8 @@ public class PlayerController : MonoBehaviour
             if(Time.time >= nextAttackTime)
             {
                 Attack();
-                GameObject go = Instantiate(projectilePrefab, transform.GetChild(0).position, Quaternion.Euler(0f, 0f, 90f));
+                GameObject go = Instantiate(projectilePrefab, transform.GetChild(0).position, Quaternion.Euler(0f, 0f, 90f), transform);
+                go.GetComponent<ProjectileController>().player = this;
                 if(!lookingLeft)
                       go.transform.Rotate(Vector3.forward, 180f);
                 nextAttackTime = Time.time + 1f / attackRate;
@@ -137,7 +145,7 @@ public class PlayerController : MonoBehaviour
 
         foreach(PlayerController pc in hitEnemies)
         {
-            pc.TakeDamage(20.0f);
+            pc.TakeDamage(attackDamage * attackMultiplier);
         }
     }
 
@@ -158,13 +166,7 @@ public class PlayerController : MonoBehaviour
         }
         else
             life -= dmg;
-
-        lifeBar.transform.GetChild(1).GetComponent<RawImage>().color = Color.Lerp(Color.red, Color.green, life / 100.0f);
-
-        Vector3 scaler = lifeBar.transform.GetChild(1).localScale;
-        scaler.x = life / 100.0f;
-        lifeBar.transform.GetChild(1).localScale = scaler;
-
+        
         if(life <= 0)
         {
             Die();
@@ -172,11 +174,27 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("TakeHit");
     }
 
+    public void UpdateLifebar()
+    {
+        lifeBar.transform.GetChild(1).GetComponent<RawImage>().color = Color.Lerp(Color.red, Color.green, life / 100.0f);
+        Vector3 scaler = lifeBar.transform.GetChild(1).localScale;
+        scaler.x = life / 100.0f;
+        lifeBar.transform.GetChild(1).localScale = scaler;
+
+    }
+
     void Die()
     {
         animator.SetBool("IsDead", true);
         //GetComponent<BoxCollider2D>().enabled = false;
         //this.enabled = false;
+    }
+    
+    public void Heal(float hp)
+    {
+        life += hp;
+        if (life > 100f)
+            life = 100f;
     }
 
     void OnDrawGizmosSelected() 
