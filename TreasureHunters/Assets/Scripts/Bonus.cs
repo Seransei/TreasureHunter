@@ -5,13 +5,14 @@ using UnityEngine;
 
 public abstract class Bonus : MonoBehaviour
 {
-    [Range(0, 30)]public float respawnRate = 2; // spawn rate in seconds
+    [Range(0, 30)]public float respawnRate = 2f; // spawn rate in seconds
     bool disabled = false;
     float disabledTimer = 0f;
+    public float bonusValue;
 
-    protected Bonus(float sr)
+    private void Start()
     {
-        respawnRate = sr;
+        respawnRate = 2f;
     }
 
     public abstract void GrantBonus(PlayerController player);

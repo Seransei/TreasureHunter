@@ -20,9 +20,14 @@ public class PlayerController : MonoBehaviour
     public bool inCombat = true;
     public bool airborne = false;
 
+    [Header("Stats")]
     public float life = 100.0f;
     public float attackDamage = 10f;
     public float attackMultiplier = 1f;
+    public float attackRange;
+    float attackRate = 2.0f;
+    float nextAttackTime = 0f;
+    float guardRate = 1f;
 
     float moveInput;
 
@@ -31,11 +36,6 @@ public class PlayerController : MonoBehaviour
     GameObject lifeBar, guardBar;
     Transform attackPoint;
     public LayerMask playerLayers;
-    public float attackRange;
-
-    float attackRate = 2.0f;
-    float nextAttackTime = 0f;
-    float guardRate = 1f;
 
     void Start()
     {

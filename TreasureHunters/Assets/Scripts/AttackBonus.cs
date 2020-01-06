@@ -1,16 +1,17 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-class AttackBonus : Bonus
+public class AttackBonus : Bonus
 {
-    float value = 0.1f;
-
-    public AttackBonus(float respawnRate) : base(respawnRate) { }
+    private void Start()
+    {
+        bonusValue = 0.1f;
+    }
 
     public override void GrantBonus(PlayerController player)
     {
-        player.attackMultiplier += value;
+        player.attackMultiplier += bonusValue;
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == 8)
