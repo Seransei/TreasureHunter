@@ -14,6 +14,7 @@ public class HealthBonus : Bonus
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("kek");
         if (other.gameObject.layer == 8)
         {
             GrantBonus(other.gameObject.GetComponent<PlayerController>());
