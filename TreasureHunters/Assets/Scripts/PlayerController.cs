@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public GameObject projectilePrefab;
 
     [Header("Transition bool")]
-    public bool lookingLeft = true;
+    public bool lookingLeft = false;
     public bool inCombat = true;
     public bool airborne = false;
 
@@ -51,19 +51,22 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        CheckInputs();
+        if(life > 0)
+        {
+            CheckInputs();
 
-        animator.SetBool("Airborne", airborne);
-        animator.SetInteger("Speed", Mathf.FloorToInt(moveInput * speed)); 
+            animator.SetBool("Airborne", airborne);
+            animator.SetInteger("Speed", Mathf.FloorToInt(moveInput * speed)); 
 
-        if(guardRate < 1f)
-            guardRate += 0.01f * Time.deltaTime;  
+            if(guardRate < 1f)
+                guardRate += 0.01f * Time.deltaTime;  
 
-        Vector3 scaler = guardBar.transform.GetChild(1).localScale;
-        scaler.x = guardRate;
-        guardBar.transform.GetChild(1).localScale = scaler;
+            Vector3 scaler = guardBar.transform.GetChild(1).localScale;
+            scaler.x = guardRate;
+            guardBar.transform.GetChild(1).localScale = scaler;
 
-        UpdateLifebar();
+            UpdateLifebar();
+        }
     }
 
     void FixedUpdate()
@@ -169,6 +172,7 @@ public class PlayerController : MonoBehaviour
         
         if(life <= 0)
         {
+            life = 0;
             Die();
         }
         animator.SetTrigger("TakeHit");
@@ -186,6 +190,7 @@ public class PlayerController : MonoBehaviour
     void Die()
     {
         animator.SetBool("IsDead", true);
+        speed = 0;
         //GetComponent<BoxCollider2D>().enabled = false;
         //this.enabled = false;
     }
