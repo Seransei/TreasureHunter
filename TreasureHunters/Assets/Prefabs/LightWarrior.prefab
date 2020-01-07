@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6132548004669698797}
   - component: {fileID: 4029238217492491377}
   m_Layer: 8
-  m_Name: Player2
+  m_Name: LightWarrior
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   heightJump: 4
-  numPlayer: 2
+  numPlayer: 1
   projectilePrefab: {fileID: 7016168786103460962, guid: d2e11921559e1554996a4aeefb6da614,
     type: 3}
   lookingLeft: 1
@@ -109,10 +109,10 @@ MonoBehaviour:
   life: 100
   attackDamage: 10
   attackMultiplier: 1
+  attackRange: 0.11
   playerLayers:
     serializedVersion: 2
     m_Bits: 256
-  attackRange: 0.11
 --- !u!50 &6132548004669698795
 Rigidbody2D:
   serializedVersion: 4

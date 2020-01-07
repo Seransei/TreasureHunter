@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   heightJump: 4
-  numPlayer: 1
+  numPlayer: 2
   projectilePrefab: {fileID: 7016168786103460962, guid: d2e11921559e1554996a4aeefb6da614,
     type: 3}
   lookingLeft: 1
@@ -109,10 +109,10 @@ MonoBehaviour:
   life: 100
   attackDamage: 10
   attackMultiplier: 1
+  attackRange: 0.11
   playerLayers:
     serializedVersion: 2
     m_Bits: 256
-  attackRange: 0.11
 --- !u!50 &6033479408090578894
 Rigidbody2D:
   serializedVersion: 4
