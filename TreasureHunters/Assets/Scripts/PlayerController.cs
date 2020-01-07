@@ -65,8 +65,8 @@ public class PlayerController : MonoBehaviour
             scaler.x = guardRate;
             guardBar.transform.GetChild(1).localScale = scaler;
 
-            UpdateLifebar();
         }
+        UpdateLifebar();
     }
 
     void FixedUpdate()
